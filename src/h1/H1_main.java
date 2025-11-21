@@ -1,4 +1,14 @@
 package h1;
 
 public class H1_main {
+    public static void main(String[] args) {
+        int [] myArray = {5,6,7,10};
+        int [] myArray2 = new int[myArray.length];
+
+        for(int i = 0; i < myArray.length; i++){
+           // System.out.println(myArray[(myArray.length - 1) - i]);
+            myArray2[i] = myArray[(myArray.length - 1) - i];
+        }
+        myArray = myArray2;
+    }
 }
